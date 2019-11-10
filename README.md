@@ -1,5 +1,12 @@
 # Simple WebApp which is a project for my study
 
+### run
+
+```sh
+$ docker-compose up -d
+$ open http://localhost:5555
+```
+
 ### feature
 
 * Simple CRUD
