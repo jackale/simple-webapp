@@ -7,3 +7,10 @@ services:
       - .:/go/src/github.com/jackale/simple-webapp
     ports:
       - "5555:5555"
+  mysql:
+    restart: always
+    image: mysql:latest
+    volumes:
+      - ./data/:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
