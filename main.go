@@ -7,6 +7,7 @@ import (
 
 func main() {
 	router := gin.Default()
+	router.LoadHTMLGlob("src/view/*")
 
 	router.GET("/", controller.IndexGET)
 	router.Run(":5555")

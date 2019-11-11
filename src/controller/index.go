@@ -7,5 +7,8 @@ import (
 )
 
 func IndexGET(c *gin.Context) {
-	c.String(http.StatusOK, "Hello, world!")
+	c.HTML(http.StatusOK, "index.tmpl", gin.H{
+		"title":   "Posts",
+		"content": "This is a content from Server",
+	})
 }
